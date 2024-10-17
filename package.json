@@ -1,0 +1,43 @@
+{
+	"name": "publishyy",
+	"version": "0.0.1",
+	"description": "",
+	"type": "module",
+	"main": "./dist/main.cjs",
+	"module": "./dist/main.js",
+	"types": "./dist/main.d.ts",
+	"files": [
+		"src",
+		"dist"
+	],
+	"exports": {
+		"require": {
+			"types": "./dist/main.d.cts",
+			"default": "./dist/main.cjs"
+		},
+		"import": {
+			"types": "./dist/main.d.ts",
+			"default": "./dist/main.js"
+		}
+	},
+	"bin": {
+		"publishyy": "dist/main.js"
+	},
+	"scripts": {
+		"build": "npm i && tsup && attw --pack && typedoc"
+	},
+	"dependencies": {
+		"inquirer": "^12.0.0",
+		"nodemon": "^3.1.7",
+		"ora": "^8.1.0",
+		"prettier": "^3.3.3",
+		"sharpyy": "^1.1.0",
+		"typedoc": "^0.26.8"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.16.4",
+		"tsup": "^8.3.0",
+		"typedoc-github-theme": "^0.1.2",
+		"typescript": "^5.6.3"
+	}
+}

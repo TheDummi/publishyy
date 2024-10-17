@@ -1,0 +1,399 @@
+{
+	"id": 0,
+	"name": "XERNERX",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 7,
+			"name": "Config",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 9,
+					"name": "bundle",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Whether to bundle the project with tsup."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces.ts",
+							"line": 12,
+							"character": 1
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 10,
+					"name": "checkTypes",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Whether to check if export types are exported correctly."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces.ts",
+							"line": 14,
+							"character": 1
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 12,
+					"name": "formatFolders",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Folders to format with prettier."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces.ts",
+							"line": 18,
+							"character": 1
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				},
+				{
+					"id": 11,
+					"name": "typedoc",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Whether to generate type documentation with typedoc."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces.ts",
+							"line": 16,
+							"character": 1
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 8,
+					"name": "update",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Whether to check for dependency updates."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces.ts",
+							"line": 10,
+							"character": 1
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						9,
+						10,
+						12,
+						11,
+						8
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "interfaces.ts",
+					"line": 8,
+					"character": 17
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Package",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"comment": {
+				"summary": [],
+				"modifierTags": [
+					"@format"
+				]
+			},
+			"children": [
+				{
+					"id": 3,
+					"name": "dependencies",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "interfaces.ts",
+							"line": 5,
+							"character": 1
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 4,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "interfaces.ts",
+									"line": 5,
+									"character": 16
+								}
+							],
+							"indexSignatures": [
+								{
+									"id": 5,
+									"name": "__index",
+									"variant": "signature",
+									"kind": 8192,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "interfaces.ts",
+											"line": 5,
+											"character": 18
+										}
+									],
+									"parameters": [
+										{
+											"id": 6,
+											"name": "index",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 2,
+					"name": "version",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "interfaces.ts",
+							"line": 4,
+							"character": 1
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						3,
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "interfaces.ts",
+					"line": 3,
+					"character": 17
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "ConfigType",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "interfaces.ts",
+					"line": 21,
+					"character": 12
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "literal",
+						"value": null
+					},
+					{
+						"type": "reference",
+						"target": 7,
+						"name": "Config",
+						"package": "publishyy"
+					}
+				]
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Interfaces",
+			"children": [
+				7,
+				1
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				13
+			]
+		}
+	],
+	"packageName": "publishyy",
+	"packageVersion": "0.0.1",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "<!-- @format -->\n\n# Publishyy"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "Package"
+		},
+		"2": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "Package.version"
+		},
+		"3": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "Package.dependencies"
+		},
+		"4": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "__type"
+		},
+		"5": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "__type.__index"
+		},
+		"7": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "Config"
+		},
+		"8": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "Config.update"
+		},
+		"9": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "Config.bundle"
+		},
+		"10": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "Config.checkTypes"
+		},
+		"11": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "Config.typedoc"
+		},
+		"12": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "Config.formatFolders"
+		},
+		"13": {
+			"sourceFileName": "src/types/interfaces.ts",
+			"qualifiedName": "ConfigType"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/types/interfaces.ts"
+		},
+		"reflections": {
+			"1": 0
+		}
+	}
+}
